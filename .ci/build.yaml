@@ -21,5 +21,6 @@ jobs:
   - ${{ if eq(parameters.host, 'Windows') }}:
     - script: esy b bash .ci/pkg-config-cygwin.sh
       displayName: 'Installing pkg-config in cygwin'
-  - script: 'esy x pkg-config --libs nettle'
-    displayName: 'Checking library...'
+  - ${{ if ne(parameters.host, 'Windows') }}:
+    - script: 'esy x pkg-config --libs nettle'
+      displayName: 'Checking library...'
