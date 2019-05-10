@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/prometheansacrifice/esy-packages/_apis/build/status/prometheansacrifice.esy-nettle?branchName=master)](https://dev.azure.com/prometheansacrifice/esy-packages/_build/latest?definitionId=31&branchName=master)
+
 What is GNU Nettle? A quote from the introduction in the Nettle Manual:
 
   Nettle is a cryptographic library that is designed to fit easily in more
